@@ -37,3 +37,8 @@ If you want to see verbose output, you can set `VERBOSE` mode by setting `VERBOS
 ```sh
 $ VERBOSE=true node index
 ```
+
+Or you can specify verbose mode by specifying the optional third argument to the `Readinglist()` constructor:
+```js
+var rl = new Readinglist('https://readinglist.stage.mozaws.net/v1', USER_PASS_AUTH, true);
+```
