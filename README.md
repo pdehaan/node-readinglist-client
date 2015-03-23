@@ -2,9 +2,15 @@
 
 A Node.js client for mozilla/readinglist
 
+## Installation:
+This module isn't in npm, but you can install it directly from GitHub as **pdehaan/node-readinglist-client**:
+```sh
+$ npm i pdehaan/node-readinglist-client -S
+```
+
 ## Usage:
 ```js
-var Readinglist = require('./lib/readinglist');
+var Readinglist = require('node-readinglist-client');
 
 var USER_PASS_AUTH = {
   user: process.env.USER,
@@ -31,7 +37,6 @@ rl.getArticles({
   console.log(data);
 });
 ```
-
 
 If you want to see verbose output, you can set `VERBOSE` mode by setting `VERBOSE=true` via the command line:
 ```sh
