@@ -1,0 +1,33 @@
+{
+  "name": "node-readinglist-client",
+  "description": "A Node.js client for mozilla/readinglist.",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/node-readinglist-client/issues"
+  },
+  "homepage": "https://github.com/pdehaan/node-readinglist-client",
+  "keywords": [
+    "readinglist"
+  ],
+  "license": "MPL 2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdehaan/node-readinglist-client.git"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": "eslint ."
+  },
+  "dependencies": {
+    "canonical-json": "0.0.4",
+    "lodash": "3.5.0",
+    "prettyjson": "1.1.0",
+    "promise": "6.1.0",
+    "request": "2.53.0"
+  },
+  "devDependencies": {
+    "eslint": "0.17.1"
+  }
+}
