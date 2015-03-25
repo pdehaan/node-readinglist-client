@@ -6,6 +6,18 @@
   "bugs": {
     "url": "https://github.com/pdehaan/node-readinglist-client/issues"
   },
+  "dependencies": {
+    "canonical-json": "0.0.4",
+    "lodash": "3.5.0",
+    "prettyjson": "1.1.0",
+    "promise": "6.1.0",
+    "request": "2.53.0"
+  },
+  "devDependencies": {
+    "code": "1.3.0",
+    "eslint": "0.17.1",
+    "lab": "5.5.1"
+  },
   "homepage": "https://github.com/pdehaan/node-readinglist-client",
   "keywords": [
     "readinglist"
@@ -17,17 +29,8 @@
     "url": "https://github.com/pdehaan/node-readinglist-client.git"
   },
   "scripts": {
+    "lint": "eslint .",
     "start": "node index",
-    "test": "eslint ."
-  },
-  "dependencies": {
-    "canonical-json": "0.0.4",
-    "lodash": "3.5.0",
-    "prettyjson": "1.1.0",
-    "promise": "6.1.0",
-    "request": "2.53.0"
-  },
-  "devDependencies": {
-    "eslint": "0.17.1"
+    "test": "lab tests/index.js"
   }
 }

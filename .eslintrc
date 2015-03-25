@@ -2,6 +2,7 @@ env:
   node: true
 
 rules:
+  camelcase: 0
   no-underscore-dangle: 0
   no-unused-vars: 1
   no-use-before-define: [1, nofunc]
