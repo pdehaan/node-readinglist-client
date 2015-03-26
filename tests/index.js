@@ -50,8 +50,8 @@ describe('Readinglist', {timeout: 5000}, function () {
         expect(responseKeys).to.only.include(['documentation', 'hello', 'url', 'version']);
         expect(response.documentation).to.equal('https://readinglist.readthedocs.org/');
         expect(response.hello).to.equal('readinglist');
+        expect(response.version).to.equal('1.3.0');
         expect(READINGLIST_SERVER).to.startWith(response.url);
-        expect(response.version).to.equal('1.2.0');
         done();
       }).catch(done);
     });
